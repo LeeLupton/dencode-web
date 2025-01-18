@@ -95,6 +95,7 @@
 							<li><a class="dropdown-item" href="${mf:h(basePath)}/string/punycode" data-dencode-method="string.punycode">${mf:h(msg['string.punycode.method'])}</a></li>
 							<li><a class="dropdown-item" href="${mf:h(basePath)}/string/base32" data-dencode-method="string.base32">${mf:h(msg['string.base32.method'])}</a></li>
 							<li><a class="dropdown-item" href="${mf:h(basePath)}/string/base45" data-dencode-method="string.base45">${mf:h(msg['string.base45.method'])}</a></li>
+							<li><a class="dropdown-item" href="${mf:h(basePath)}/string/base58" data-dencode-method="string.base58">${mf:h(msg['string.base58.method'])}</a></li>
 							<li><a class="dropdown-item" href="${mf:h(basePath)}/string/base64" data-dencode-method="string.base64">${mf:h(msg['string.base64.method'])}</a></li>
 							<li><a class="dropdown-item" href="${mf:h(basePath)}/string/ascii85" data-dencode-method="string.ascii85">${mf:h(msg['string.ascii85.method'])}</a></li>
 							<li><a class="dropdown-item" href="${mf:h(basePath)}/string/quoted-printable" data-dencode-method="string.quoted-printable">${mf:h(msg['string.quoted-printable.method'])}</a></li>
@@ -355,6 +356,7 @@
 							<c:if test="${methods.contains('string.base32')}"><tr data-dencode-method="string.base32"><th>${mf:h(msg['string.base32.func.decStrBase32'])}</th><td><span id="decStrBase32" class="for-disp"></span></td></tr></c:if>
 							<c:if test="${methods.contains('string.base45')}"><tr data-dencode-method="string.base45"><th>${mf:h(msg['string.base45.func.decStrBase45'])}</th><td><span id="decStrBase45" class="for-disp"></span></td></tr></c:if>
 							<c:if test="${methods.contains('string.base45')}"><tr data-dencode-method="string.base45"><th>${mf:h(msg['string.base45.func.decStrBase45ZlibCoseCbor'])}</th><td><span id="decStrBase45ZlibCoseCbor" class="for-disp"></span></td></tr></c:if>
+							<c:if test="${methods.contains('string.base58')}"><tr data-dencode-method="string.base58"><th>${mf:h(msg['string.base64.func.decStrBase58'])}</th><td><span id="decStrBase58" class="for-disp"></span></td></tr></c:if>
 							<c:if test="${methods.contains('string.base64')}"><tr data-dencode-method="string.base64"><th>${mf:h(msg['string.base64.func.decStrBase64'])}</th><td><span id="decStrBase64" class="for-disp"></span></td></tr></c:if>
 							<c:if test="${methods.contains('string.ascii85')}"><tr data-dencode-method="string.ascii85"><th>${mf:h(msg['string.ascii85.func.decStrAscii85'])}</th><td><span id="decStrAscii85" class="for-disp"></span></td></tr></c:if>
 							<c:if test="${methods.contains('string.quoted-printable')}"><tr data-dencode-method="string.quoted-printable"><th>${mf:h(msg['string.quoted-printable.func.decStrQuotedPrintable'])}</th><td><span id="decStrQuotedPrintable" class="for-disp"></span></td></tr></c:if>
